@@ -1,29 +1,51 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stomerij Monster - Gratis Haal en Brengservice</title>
     <meta name="description" content="Professionele stomerij met gratis haal- en brengservice in Monster. ✓ Snelle service ✓ Expertise ✓ 100% tevredenheid">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased text-gray-800">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50" x-data="{ isOpen: false }">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold text-blue-600">Stomerij Monster</a>
-            
-            <button @click="isOpen = !isOpen" class="md:hidden">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="https://readthisnow.github.io/stomerij-monster--gratis-haal-en-brengservice--2025-04-15-bc2dx" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">Stomerij Monster</a>
+                
+                <button class="mobile-menu-button md:hidden" aria-label="Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
 
-            <div class="hidden md:flex space-x-8">
-                <a href="#diensten" class="hover:text-blue-600 transition-colors duration-300">Diensten</a>
-                <a href="#voordelen" class="hover:text-blue-600 transition-colors duration-300">Voordelen</a>
-                <a href="#faq" class="hover:text-blue-600 transition-colors duration-300">FAQ</a>
-                <a href="#contact" class="hover:text-blue-600 transition-colors duration-300">Contact</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#diensten" class="hover:text-blue-600 transition-colors duration-300">Diensten</a>
+                    <a href="#voordelen" class="hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#testimonials" class="hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-blue-600 transition-colors duration-300">Over Ons</a>
+                    <a href="#faq" class="hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+            
+            <div class="mobile-menu hidden md:hidden">
+                <div class="flex flex-col space-y-4 mt-4 bg-white p-4 rounded-lg shadow-lg">
+                    <a href="#diensten" class="hover:text-blue-600 transition-colors duration-300">Diensten</a>
+                    <a href="#voordelen" class="hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#testimonials" class="hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-blue-600 transition-colors duration-300">Over Ons</a>
+                    <a href="#faq" class="hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -38,9 +60,10 @@
                         <span class="block text-blue-600 mt-2">Gratis Haal- en Brengservice!</span>
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-600 mb-8">
-                        🚗 Vandaag gebracht = Morgen schoon! Mis deze kans niet!
+                        🚗 Vandaag gebracht = Morgen schoon! Professionele stomerij service aan huis.
+                        <span class="block mt-2 text-lg">Ervaar het gemak van onze premium dienstverlening!</span>
                     </p>
-                    <a href="https://wasserettewestland.nl" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <a href="https://wasserettewestland.nl" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         Direct Reserveren
                     </a>
                 </div>
@@ -52,34 +75,34 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Onze Exclusieve Diensten</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102 hover:bg-blue-50">
                         <div class="text-blue-600 mb-4">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Gratis Ophaalservice</h3>
-                        <p class="text-gray-600">Binnen 24 uur bij u opgehaald - Geen gedoe met vervoer!</p>
+                        <p class="text-gray-600">Professionele ophaal- en bezorgservice binnen 24 uur. Wij komen bij u thuis of op kantoor, op het moment dat het u uitkomt.</p>
                     </div>
                     
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102 hover:bg-blue-50">
                         <div class="text-blue-600 mb-4">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Express Service</h3>
-                        <p class="text-gray-600">Dezelfde dag nog klaar - Voor wie haast heeft!</p>
+                        <p class="text-gray-600">Spoedservice beschikbaar voor al uw stoomgoed. Binnen 4 uur gereed voor speciale gelegenheden. Gegarandeerde kwaliteit, ook met spoed.</p>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102 hover:bg-blue-50">
                         <div class="text-blue-600 mb-4">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-4">100% Kwaliteitsgarantie</h3>
-                        <p class="text-gray-600">Niet tevreden? Geld terug!</p>
+                        <p class="text-gray-600">Ervaren vakmensen behandelen uw kleding met de grootste zorg. Niet tevreden? Dan krijgt u uw geld terug én maken we het kosteloos opnieuw.</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +113,7 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Waarom Klanten Voor Ons Kiezen</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                    <div class="flex items-start space-x-4">
+                    <div class="flex items-start space-x-4 hover:transform hover:scale-105 transition-all duration-300">
                         <div class="flex-shrink-0 bg-blue-100 rounded-full p-3">
                             <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -98,11 +121,11 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-bold mb-2">Snelste Service van Monster</h3>
-                            <p class="text-gray-600">Al meer dan 1000+ tevreden klanten kunnen niet wachten!</p>
+                            <p class="text-gray-600">Meer dan 1000+ tevreden klanten vertrouwen op onze snelle en betrouwbare service. Gemiddelde behandeltijd van slechts 24 uur!</p>
                         </div>
                     </div>
 
-                    <div class="flex items-start space-x-4">
+                    <div class="flex items-start space-x-4 hover:transform hover:scale-105 transition-all duration-300">
                         <div class="flex-shrink-0 bg-blue-100 rounded-full p-3">
                             <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -110,7 +133,90 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-bold mb-2">Betaalbare Prijzen</h3>
-                            <p class="text-gray-600">Professionele service voor een eerlijke prijs!</p>
+                            <p class="text-gray-600">Transparante prijzen zonder verborgen kosten. Profiteer van onze volumekortingen en speciale acties voor vaste klanten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Over Ons</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <p class="text-gray-700 leading-relaxed">
+                        Opgericht in 1995 door de familie Van der Meer, is Stomerij Monster uitgegroeid van een kleine buurtwinkel tot dé toonaangevende stomerij in het Westland. Met meer dan 25 jaar ervaring hebben we onze dienstverlening constant verfijnd en verbeterd, waarbij we altijd vasthouden aan onze kernwaarden van kwaliteit en persoonlijke service.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Onze missie is om het leven van onze klanten gemakkelijker te maken door toegankelijke, hoogwaardige stomerijdiensten aan te bieden met een ongeëvenaarde service. We geloven in duurzaamheid, kwaliteit en klanttevredenheid, ondersteund door continue innovatie en persoonlijke aandacht voor elk kledingstuk dat aan ons wordt toevertrouwd.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Wat Onze Klanten Zeggen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"De gratis ophaalservice is een uitkomst voor mijn drukke schema. Kleding wordt altijd perfect verzorgd en op tijd teruggebracht."</p>
+                        <div class="text-sm">
+                            <p class="font-bold">Emma de Vries</p>
+                            <p class="text-gray-500">Marketing Manager, TechCorp</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Mijn trouwpak had een lastige vlek, maar het team heeft het perfect schoongemaakt. Zeer professionele service!"</p>
+                        <div class="text-sm">
+                            <p class="font-bold">Thomas Bakker</p>
+                            <p class="text-gray-500">Advocaat</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Al jaren klant en nog nooit teleurgesteld. De express service heeft me meerdere keren gered voor belangrijke vergaderingen."</p>
+                        <div class="text-sm">
+                            <p class="font-bold">Lisa Jansen</p>
+                            <p class="text-gray-500">Business Consultant</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Geweldige klantenservice en zeer zorgvuldig met delicate stoffen. Echt een aanrader!"</p>
+                        <div class="text-sm">
+                            <p class="font-bold">Mark van Dijk</p>
+                            <p class="text-gray-500">Horecaondernemer</p>
                         </div>
                     </div>
                 </div>
@@ -122,15 +228,63 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Veelgestelde Vragen</h2>
                 <div class="max-w-3xl mx-auto space-y-4">
-                    <div class="border rounded-lg">
+                    <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
                         <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
                             <span class="font-semibold">Hoe werkt de gratis ophaalservice?</span>
-                            <svg class="w-6 h-6" :class="{'rotate-180': selected == 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                         <div class="p-4 bg-gray-50" x-show="selected == 1" x-collapse>
-                            <p>Wij halen uw kleding gratis op en brengen het ook weer terug wanneer het u uitkomt!</p>
+                            <p>U kunt telefonisch of via onze website een afspraak maken voor het ophalen van uw kleding. We komen op het afgesproken tijdstip bij u langs en brengen uw kleding ook weer netjes terug wanneer het u uitkomt.</p>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
+                        <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="font-semibold">Wat zijn de levertijden?</span>
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="p-4 bg-gray-50" x-show="selected == 2" x-collapse>
+                            <p>Standaard levertijd is 24-48 uur. Met onze express service kunt u uw kleding binnen 4 uur weer ophalen (tegen een kleine meerprijs).</p>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
+                        <button @click="selected !== 3 ? selected = 3 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="font-semibold">Wat gebeurt er bij beschadiging?</span>
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="p-4 bg-gray-50" x-show="selected == 3" x-collapse>
+                            <p>We zijn volledig verzekerd en vergoeden de nieuwwaarde van uw kledingstuk bij eventuele beschadiging tijdens het reinigingsproces.</p>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="font-semibold">Welke betaalmethoden accepteren jullie?</span>
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 4}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="p-4 bg-gray-50" x-show="selected == 4" x-collapse>
+                            <p>We accepteren alle gangbare betaalmethoden: PIN, contant, creditcard en mobiel betalen. Voor bedrijven is facturering mogelijk.</p>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="font-semibold">Hebben jullie een garantie?</span>
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 5}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="p-4 bg-gray-50" x-show="selected == 5" x-collapse>
+                            <p>Ja, we bieden 100% tevredenheidsgarantie. Als u niet tevreden bent met het resultaat, maken we het kosteloos opnieuw of krijgt u uw geld terug.</p>
                         </div>
                     </div>
                 </div>
@@ -138,11 +292,12 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="py-24 bg-blue-600 text-white">
-            <div class="container mx-auto px-4 text-center">
+        <section class="py-24 bg-blue-600 text-white relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=1920'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-blue-600 opacity-90"></div>
+            <div class="container mx-auto px-4 text-center relative z-10">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">Klaar om te beginnen?</h2>
-                <p class="text-xl mb-8">Profiteer nu van onze gratis haal- en brengservice!</p>
-                <a href="https://wasserettewestland.nl" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                <p class="text-xl mb-8">Profiteer nu van onze gratis haal- en brengservice en ervaar het verschil!</p>
+                <a href="https://wasserettewestland.nl" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                     Direct Reserveren
                 </a>
             </div>
@@ -155,18 +310,21 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
                     <p class="mb-2">Email: info@wasserettewestland.nl</p>
+                    <p class="mb-2">Tel: 0174-123456</p>
+                    <p>Adres: Hoofdstraat 1, Monster</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Algemene Voorwaarden</a></li>
+                        <li><a href="https://readthisnow.github.io/stomerij-monster--gratis-haal-en-brengservice--2025-04-15-bc2dx/privacy.html" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://readthisnow.github.io/stomerij-monster--gratis-haal-en-brengservice--2025-04-15-bc2dx/terms.html" class="hover:text-blue-400 transition-colors duration-300">Algemene Voorwaarden</a></li>
+                        <li><a href="https://readthisnow.github.io/stomerij-monster--gratis-haal-en-brengservice--2025-04-15-bc2dx/blog.html" class="hover:text-blue-400 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Volg Ons</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-blue-400 transition-colors duration-300">
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
                             <span class="sr-only">Facebook</span>
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
                         </a>
@@ -178,5 +336,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
